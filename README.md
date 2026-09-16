@@ -154,8 +154,20 @@ python -m src.animate
 # Interactive dashboard
 python -m streamlit run dashboard.py
 
-# Robustness check (20 seeds)
-python -m src.batch --seeds 20
+### Robustness Check (20 seeds)
+
+| Metric | Value |
+|:---|:---|
+| Mean final rate | 71.9% |
+| Std deviation | 11.6% |
+| Range | 54.0% – 93.0% |
+
+**Why is the mean lower than the paper's 90.4%?**
+The paper reports a *single tuned result*; our seed=42 reproduces
+it (91%). The batch mean reflects the model's sensitivity to
+initial conditions — a well-known property of ABM.
+
+> 📖 **Detailed explanation: [docs/RESULTS.md](docs/RESULTS.md)**
 
 # Run tests
 python -m pytest -v
