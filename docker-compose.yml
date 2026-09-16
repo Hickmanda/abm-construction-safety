@@ -1,0 +1,7 @@
+services:
+  abm:
+    build: .
+    container_name: abm-construction-safety
+    volumes:
+      - ./results:/app/results
+    command: python -m src.visualize

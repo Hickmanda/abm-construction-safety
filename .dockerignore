@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.vscode/
+.idea/
+.git/
+.gitignore
+notebooks/.ipynb_checkpoints/
+results/*.png
+*.md

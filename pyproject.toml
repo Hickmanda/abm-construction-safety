@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "abm-construction-safety"
+version = "1.0.0"
+description = "Agent-Based Simulation of Construction Worker Safety (Zhang et al., 2025)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Daniil Marchici", email = "danielmarcki4234@gmail.com" },
+]
+keywords = [
+    "agent-based-modeling",
+    "construction-safety",
+    "cumulative-prospect-theory",
+    "mesa",
+    "simulation",
+]
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering",
+]
+
+dependencies = [
+    "mesa>=2.3.0",
+    "numpy>=1.26.0",
+    "matplotlib>=3.8.0",
+    "networkx>=3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "flake8>=7.0.0",
+    "black>=24.0.0",
+]
+
+[project.scripts]
+abm-simulate = "run:main"
+
+[tool.setuptools]
+packages = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
