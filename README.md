@@ -25,19 +25,19 @@ Managers gradually shift workers from unsafe to safe over 80 days.*
 
 ---
 
-## 🖥️ Interactive Dashboard
+## 🖥️ Live Interactive Dashboard
 
-Run the Streamlit dashboard to explore the model interactively:
+**👉 [Open the live dashboard](https://abm-construction-safety.streamlit.app)**
+
+Adjust parameters, run the simulation, and see results live in your browser.
+
+![Dashboard](docs/screenshots/dashboard.png)
+
+Or run it locally:
 
 ```bash
 python -m streamlit run dashboard.py
 ```
-
-![Dashboard](docs/screenshots/dashboard.png)
-
-Adjust parameters, run the simulation, and see results live.
-
----
 
 ## 📸 Visualizations
 
@@ -253,6 +253,13 @@ python -m pytest -v
    Organ. Behav. Hum. Decis. Process., 50(2), 179–211.
 
 ---
+
+## 📖 Documentation
+
+- **[docs/METHODOLOGY.md](docs/METHODOLOGY.md)** — mathematical details
+- **[docs/RESULTS.md](docs/RESULTS.md)** — full results
+- **[docs/FOR_THESIS.md](docs/FOR_THESIS.md)** — notes for bachelor's thesis
+- **[docs/HOW_TO_PRESENT.md](docs/HOW_TO_PRESENT.md)** — presentation guide
 
 ## 📬 Contact
 
